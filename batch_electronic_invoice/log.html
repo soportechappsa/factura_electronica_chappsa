@@ -1,0 +1,36 @@
+<div>
+    <div class="table-responsive">
+        <table class="table table-bordered table-hover log-details-table">
+            <tr>
+                <th style="width:4%"> {{ __("Line") }} </th>
+                <th style="width:auto"> {{ __("status") }} </th>
+                <th style="width:auto"> {{ __("Invoice") }} </th>
+                <th style="width:auto"> {{ __("Details") }} </th>
+            </tr>
+
+            {% for row in data %}
+            <tr>
+                <td>
+                    <span style="text-align: center;"> {{ row.line }} </span>
+                </td>
+
+                <td>
+                    <span style="text-align: left;"> {{ row.status }}
+                    </span>
+                </td>
+
+                <td>
+                    <span style="text-align: left;"> {{ row.invoice }}
+                    </span>
+                </td>
+
+                <td>
+                    <span style="text-align: left;"> {{ row.details }}
+                    </span>
+                </td>
+            </tr>
+
+            {% endfor %}
+        </table>
+    </div>
+</div>

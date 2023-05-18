@@ -1,0 +1,80 @@
+{
+ "actions": [],
+ "autoname": "format:COMBINATION-{###}",
+ "creation": "2021-08-10 21:45:01.653786",
+ "description": "Tabla para configurar series, que permite asignar tipo de documentos segun SAT ASL, Factura Electronica FEL. Aplica para Facturas de venta",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "description",
+  "section_break_12",
+  "fel_combinations"
+ ],
+ "fields": [
+  {
+   "description": "Agregue filas de frases para generar combinaciones",
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "fel_combinations",
+   "fieldtype": "Table",
+   "label": "FEL Combinations",
+   "options": "FEL Combinations"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "in_preview": 1,
+   "label": "Description"
+  }
+ ],
+ "links": [],
+ "modified": "2021-08-22 20:48:58.675036",
+ "modified_by": "Administrator",
+ "module": "Factura Electronica",
+ "name": "Combination Of Phrases",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Admin Facelec",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Usuario Facelec",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_preview_popup": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

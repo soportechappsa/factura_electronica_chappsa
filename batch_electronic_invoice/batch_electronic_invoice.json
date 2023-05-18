@@ -1,0 +1,115 @@
+{
+ "actions": [],
+ "autoname": "BATCH.##########",
+ "creation": "2020-05-21 11:11:32.416463",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "posting_date",
+  "validate_invoices",
+  "invoices_section",
+  "batch_invoices",
+  "amended_from",
+  "log_status_section",
+  "details",
+  "log_table"
+ ],
+ "fields": [
+  {
+   "fieldname": "validate_invoices",
+   "fieldtype": "Button",
+   "label": "Validate Invoices"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Batch Electronic Invoice",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "invoices_section",
+   "fieldtype": "Section Break",
+   "label": "Invoices"
+  },
+  {
+   "fieldname": "batch_invoices",
+   "fieldtype": "Table",
+   "label": "Batch Invoices",
+   "options": "Batch Invoices"
+  },
+  {
+   "fieldname": "log_status_section",
+   "fieldtype": "Section Break",
+   "label": "Log Status"
+  },
+  {
+   "fieldname": "details",
+   "fieldtype": "Code",
+   "hidden": 1,
+   "label": "Details",
+   "read_only": 1
+  },
+  {
+   "fieldname": "log_table",
+   "fieldtype": "HTML",
+   "label": "Log Table"
+  }
+ ],
+ "links": [],
+ "modified": "2021-08-22 20:43:45.255828",
+ "modified_by": "Administrator",
+ "module": "Factura Electronica",
+ "name": "Batch Electronic Invoice",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Admin Facelec",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Usuario Facelec",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

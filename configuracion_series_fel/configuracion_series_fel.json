@@ -1,0 +1,99 @@
+{
+ "actions": [],
+ "creation": "2019-09-25 18:43:07.643617",
+ "description": "Tabla para configurar series, que permite asignar tipo de documentos segun SAT ASL, Factura Electronica FEL. Aplica para Facturas de venta",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "notes",
+  "serie",
+  "tipo_documento",
+  "column_break_3",
+  "serie_sat",
+  "section_break_3",
+  "es_exportacion",
+  "codigo_incoterm",
+  "combinacion_de_frases_section",
+  "combination_of_phrases"
+ ],
+ "fields": [
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "serie",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Serie",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "description": "Seleccione el tipo documento <b>FEL</b>",
+   "fieldname": "tipo_documento",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Tipo Documento",
+   "options": "\nFACT\nFCAM\nFPEQ\nFCAP\nFESP\nNABN\nRDON\nRECI\nNDEB\nNCRE\nFACA\nFCCA\nFAPE\nFCPE\nFAAE\nFCAE",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "<b>EN DESARROLLO:</b> Tipo documento para AsisteLibro SAT, aseg\u00farese de que este relacionado con el campo Tipo Documento. NO influye en la generaci\u00f3n de documentos electr\u00f3nicos.",
+   "fieldname": "serie_sat",
+   "fieldtype": "Select",
+   "label": "Serie SAT",
+   "options": "\nFC\nFE\nFCE\nNC\nND\nFPC\nFPE\nFAPE\nFACA\nFAAE\nDA\nFA\nFO\nEP\nFDU"
+  },
+  {
+   "description": "* Seleccione una combinaci\u00f3n de frases para aplicar en la serie",
+   "fieldname": "combinacion_de_frases_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "combination_of_phrases",
+   "fieldtype": "Link",
+   "label": "Combination Of Phrases",
+   "options": "Combination Of Phrases"
+  },
+  {
+   "default": "0",
+   "fieldname": "es_exportacion",
+   "fieldtype": "Check",
+   "label": "Es Exportacion?"
+  },
+  {
+   "depends_on": "eval:doc.es_exportacion == 1;",
+   "description": "* Seleccione un c\u00f3digo si la serie ser\u00e1 utilizada para facturas exportaci\u00f3n",
+   "fieldname": "codigo_incoterm",
+   "fieldtype": "Select",
+   "label": "Codigo INCOTERM",
+   "options": "\nEXW\nFCA\nFAS\nFOB\nCFR\nCIF\nCPT\nCIP\nDDP\nDAP\nDAT\nZZZ"
+  },
+  {
+   "fieldname": "section_break_3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "- Las notas de cr\u00e9dito no usa Frases\n- La anulaci\u00f3n de documentos electr\u00f3nicos no usa Frases",
+   "fieldname": "notes",
+   "fieldtype": "Text",
+   "label": "Notes",
+   "read_only": 1
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2021-08-16 22:28:27.578665",
+ "modified_by": "Administrator",
+ "module": "Factura Electronica",
+ "name": "Configuracion Series FEL",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

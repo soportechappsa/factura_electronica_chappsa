@@ -1,0 +1,293 @@
+{
+ "actions": [],
+ "autoname": "field:uuid",
+ "creation": "2019-11-04 20:25:41.140517",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "status",
+  "detalles_fel_column",
+  "tipo_documento",
+  "resultado",
+  "serie_factura_original",
+  "fecha",
+  "origen",
+  "descripcion",
+  "control_emision_section",
+  "saldo",
+  "column_break_8",
+  "creditos",
+  "alertas_infile_section",
+  "alertas",
+  "descripcion_alertas_infile",
+  "alertas_sat",
+  "descripcion_alertas_sat",
+  "cantidad_errores",
+  "descripcion_errores",
+  "detalles_factura_electronica_generada_section",
+  "informacion_adicional",
+  "uuid",
+  "serie",
+  "numero",
+  "serie_para_factura",
+  "xml_firmado_para_generar_doc_electronico_section",
+  "xml_certificado",
+  "registro_tiempo",
+  "registro_tiempo_section",
+  "enviado",
+  "column_break_26",
+  "recibido"
+ ],
+ "fields": [
+  {
+   "collapsible": 1,
+   "fieldname": "detalles_fel_column",
+   "fieldtype": "Section Break",
+   "in_preview": 1,
+   "label": "Detalles FEL",
+   "read_only": 1
+  },
+  {
+   "fieldname": "resultado",
+   "fieldtype": "Data",
+   "label": "Resultado",
+   "read_only": 1
+  },
+  {
+   "fieldname": "fecha",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Fecha",
+   "read_only": 1
+  },
+  {
+   "fieldname": "origen",
+   "fieldtype": "Text",
+   "label": "Origen",
+   "read_only": 1
+  },
+  {
+   "fieldname": "descripcion",
+   "fieldtype": "Text",
+   "label": "Descripcion",
+   "read_only": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "control_emision_section",
+   "fieldtype": "Section Break",
+   "label": "Control Emision",
+   "read_only": 1
+  },
+  {
+   "fieldname": "saldo",
+   "fieldtype": "Currency",
+   "label": "Saldo",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "creditos",
+   "fieldtype": "Currency",
+   "label": "Creditos",
+   "read_only": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "alertas_infile_section",
+   "fieldtype": "Section Break",
+   "label": "Alertas INFILE/SAT",
+   "read_only": 1
+  },
+  {
+   "fieldname": "alertas",
+   "fieldtype": "Data",
+   "label": "Alertas",
+   "read_only": 1
+  },
+  {
+   "fieldname": "descripcion_alertas_infile",
+   "fieldtype": "Text",
+   "label": "Descripcion Alertas INFILE",
+   "read_only": 1
+  },
+  {
+   "fieldname": "alertas_sat",
+   "fieldtype": "Data",
+   "label": "Alertas SAT",
+   "read_only": 1
+  },
+  {
+   "fieldname": "descripcion_alertas_sat",
+   "fieldtype": "Text",
+   "label": "Descripcion Alertas SAT",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cantidad_errores",
+   "fieldtype": "Data",
+   "label": "Cantidad Errores",
+   "read_only": 1
+  },
+  {
+   "fieldname": "descripcion_errores",
+   "fieldtype": "Text",
+   "label": "Descripcion Errores",
+   "read_only": 1
+  },
+  {
+   "fieldname": "informacion_adicional",
+   "fieldtype": "Text",
+   "label": "Informacion Adicional",
+   "read_only": 1
+  },
+  {
+   "fieldname": "uuid",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "UUID",
+   "read_only": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "serie",
+   "fieldtype": "Data",
+   "label": "Serie",
+   "read_only": 1
+  },
+  {
+   "fieldname": "numero",
+   "fieldtype": "Data",
+   "label": "Numero",
+   "read_only": 1
+  },
+  {
+   "fieldname": "xml_certificado",
+   "fieldtype": "Code",
+   "label": "XML Enviado",
+   "options": "XML",
+   "read_only": 1
+  },
+  {
+   "bold": 1,
+   "fieldname": "registro_tiempo",
+   "fieldtype": "Section Break",
+   "label": "REGISTRO TIEMPO"
+  },
+  {
+   "fieldname": "registro_tiempo_section",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "enviado",
+   "fieldtype": "Read Only",
+   "label": "Enviado"
+  },
+  {
+   "fieldname": "recibido",
+   "fieldtype": "Read Only",
+   "label": "Recibido"
+  },
+  {
+   "fieldname": "detalles_factura_electronica_generada_section",
+   "fieldtype": "Section Break",
+   "label": "Detalles Factura Electronica Generada",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_26",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "serie_factura_original",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Serie Factura Original",
+   "read_only": 1
+  },
+  {
+   "fieldname": "serie_para_factura",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Serie para Factura",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tipo_documento",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Tipo Documento",
+   "options": "\nFactura Electronica\nFactura Especial\nFactura Exportacion\nFactura Exenta\nNota de Credito\nNota de Debito\nAnulacion\nFactura Venta Cambiaria Electronica",
+   "read_only": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Valid\nCancelled",
+   "read_only": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "xml_firmado_para_generar_doc_electronico_section",
+   "fieldtype": "Section Break",
+   "label": "XML ENVIADO EN PETICION"
+  }
+ ],
+ "links": [],
+ "modified": "2021-08-22 20:39:43.307461",
+ "modified_by": "Administrator",
+ "module": "Factura Electronica",
+ "name": "Envio FEL",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Admin Facelec",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Usuario Facelec",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_name_in_global_search": 1,
+ "show_preview_popup": 1,
+ "sort_field": "fecha",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_seen": 1
+}
